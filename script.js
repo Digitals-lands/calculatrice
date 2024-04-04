@@ -1,7 +1,15 @@
 let display = document.getElementById('display');
 
 function appendToDisplay(value) {
+    if( display.value == 'Error')
+    {
+        display.value = value;
+
+    }else{
+        
     display.value += value;
+    }
+
 }
 
 function clearDisplay() {
