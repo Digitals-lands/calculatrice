@@ -13,9 +13,14 @@ function calculate() {
         parts = display.value.split("^");
     if (parts.length === 2) {
         power()
-    }else{
+    }else if (parts.length === 1){
 
-        display.value = eval(display.value);}
+        display.value = eval(display.value);
+    }
+    else{
+        display.value = 'Error';
+
+    }
     } catch (error) {
         display.value = 'Error';
     }
